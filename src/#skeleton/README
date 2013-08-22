@@ -1,0 +1,3 @@
+Dies ist ein Framework für ein Modul. Einfach ./init.sh <MODULNAME>
+ausführen um das neue Modul zu initialisieren.  Das init.sh Skript und
+diese README-File werden danach gelöscht.

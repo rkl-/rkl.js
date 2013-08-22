@@ -1,0 +1,86 @@
+.
+├── api.ts
+├── build
+│   ├── .gitignore
+│   ├── rkl.js
+│   └── rkl.min.js
+├── copyright
+├── .gitignore
+├── Makefile
+├── README.md
+├── src
+│   ├── crypt
+│   │   ├── api.ts
+│   │   ├── build
+│   │   │   ├── .gitignore
+│   │   │   └── rklcrypt.js
+│   │   ├── Makefile
+│   │   └── src
+│   │       ├── eca
+│   │       │   ├── AException.ts
+│   │       │   ├── CAbstractMethod.ts
+│   │       │   ├── CInvalidHash.ts
+│   │       │   ├── CInvalidPassphrase.ts
+│   │       │   ├── CMissingDependency.ts
+│   │       │   ├── CNotMySignature.ts
+│   │       │   └── codes.ts
+│   │       ├── ecc
+│   │       │   ├── ASJCLKeypair.ts
+│   │       │   ├── CEcdsaPair.ts
+│   │       │   ├── CElgamalPair.ts
+│   │       │   ├── CKeypair.ts
+│   │       │   ├── CSignedData.ts
+│   │       │   └── ISignedData.ts
+│   │       ├── hash
+│   │       │   ├── sha256.ts
+│   │       │   └── utf8CRC32.ts
+│   │       └── mvc
+│   │           ├── CController.ts
+│   │           ├── CModel.ts
+│   │           └── CView.ts
+│   ├── fin
+│   │   ├── api.ts
+│   │   ├── build
+│   │   │   ├── .gitignore
+│   │   │   └── rklfin.js
+│   │   ├── copyright
+│   │   ├── Makefile
+│   │   └── src
+│   │       ├── account
+│   │       │   ├── Generic.ts
+│   │       │   ├── History.ts
+│   │       │   ├── Transaction.ts
+│   │       │   └── types.ts
+│   │       ├── currency
+│   │       │   └── Generic.ts
+│   │       ├── exception
+│   │       │   ├── BalanceToLow.ts
+│   │       │   ├── DuplicateAccount.ts
+│   │       │   ├── DuplicateTransaction.ts
+│   │       │   ├── Generic.ts
+│   │       │   ├── IncompatibleCurrencies.ts
+│   │       │   ├── InvalidAccount.ts
+│   │       │   ├── InvalidAmount.ts
+│   │       │   ├── InvalidValue.ts
+│   │       │   └── Unknown.ts
+│   │       └── generic
+│   │           └── utils.ts
+│   └── #skeleton
+│       ├── api.ts
+│       ├── build
+│       │   └── .gitignore
+│       ├── init.sh
+│       ├── Makefile
+│       ├── README
+│       └── src
+│           ├── eca
+│           │   ├── AException.ts
+│           │   ├── CMissingDependency.ts
+│           │   └── codes.ts
+│           └── mvc
+│               ├── CController.ts
+│               ├── CModel.ts
+│               └── CView.ts
+└── tree.txt
+
+21 directories, 62 files
