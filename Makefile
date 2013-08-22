@@ -80,7 +80,7 @@ finally:
 	mv build/${LIBNAME}.min.js.sed build/${LIBNAME}.min.js
 
 	## Immer Tree der aktuellen Struktur erzeugen
-	tree -a > tree.txt
+	tree > tree.txt
 
 #
 # Aufräumen

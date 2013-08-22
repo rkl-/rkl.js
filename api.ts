@@ -32,7 +32,7 @@
 ///<reference path='src/ecc/CEcdsaPair.ts'/>
 ///<reference path='src/ecc/CKeypair.ts'/>
 
-module rkl.crypt
+module rkl
 {
 	/** ************************************************************ */
 	/** ********************* VORBEREITUNGEN *********************** */

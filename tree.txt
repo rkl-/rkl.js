@@ -1,18 +1,15 @@
 .
 ├── api.ts
 ├── build
-│   ├── .gitignore
 │   ├── rkl.js
 │   └── rkl.min.js
 ├── copyright
-├── .gitignore
 ├── Makefile
 ├── README.md
 ├── src
 │   ├── crypt
 │   │   ├── api.ts
 │   │   ├── build
-│   │   │   ├── .gitignore
 │   │   │   └── rklcrypt.js
 │   │   ├── Makefile
 │   │   └── src
@@ -41,7 +38,6 @@
 │   ├── fin
 │   │   ├── api.ts
 │   │   ├── build
-│   │   │   ├── .gitignore
 │   │   │   └── rklfin.js
 │   │   ├── copyright
 │   │   ├── Makefile
@@ -68,7 +64,6 @@
 │   └── #skeleton
 │       ├── api.ts
 │       ├── build
-│       │   └── .gitignore
 │       ├── init.sh
 │       ├── Makefile
 │       ├── README
@@ -83,4 +78,4 @@
 │               └── CView.ts
 └── tree.txt
 
-21 directories, 62 files
+21 directories, 57 files
