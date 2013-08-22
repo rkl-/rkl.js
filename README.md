@@ -7,9 +7,9 @@ Javascript Bibliothek
 Sie können diese Arbeit durch Spenden unterstützen und für zukünftige
 Weiterentwicklungen fördern.
 
-Bitcoin		1HtGPhKPrqJijS6ofUQ3r6zTuVrbVcbXKC
-Litecoin	LKP9wa9JmDDh37XzAq31KyZR3HYBEGF589
-Primecoin	AZbJUUbSkWuV8fvTNieQbAmPGBNEhAjSsm
+    * Bitcoin		1HtGPhKPrqJijS6ofUQ3r6zTuVrbVcbXKC
+    * Litecoin		LKP9wa9JmDDh37XzAq31KyZR3HYBEGF589
+    * Primecoin		AZbJUUbSkWuV8fvTNieQbAmPGBNEhAjSsm
 
 ### Copyright & Lizenz
 Copyright 2013 Romano Kleinwächter - Alle Rechte vorbehalten
@@ -20,14 +20,17 @@ Verwendete Bibliotheken unterliegen deren jeweiligen Lizenzen.
 
 ### Abhängigkeiten
 Bibliotheken
+
     * SJCL mit ECC Komponente [@github](https://github.com/bitwiseshiftleft/sjcl)
 
 Node.js
+
     * node
     * npm
     * typescript
 
 Sonstiges
+
     * sed
     * tree
     * GNU make
@@ -69,6 +72,7 @@ und die Library wird gebaut. Das fertigte Javascript liegt dann im
 *build* Verzeichnis. Noch mal zusammengefasst:
 
 **Bibliothek kompilieren**
+
     * Abhängige Tools sicherstellen
     * Makefile anpassen
     * *make* ausführen
@@ -84,6 +88,7 @@ vorhanden. Abschließnd muss die Komponente noch in der Makefile
 hinterlegt werden. Hier noch mal als Zusammenfassung:
 
 **Komponente initialisieren**
+
     * cd src
     * cp -ad \\#skeleton <MEINE_KOMPONENTE>
     * cd <MEINE_KOMPONENTE>
