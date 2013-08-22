@@ -90,7 +90,7 @@ hinterlegt werden. Hier noch mal als Zusammenfassung:
 **Komponente initialisieren**
 
     * cd src
-    * cp -ad \\#skeleton <MEINE_KOMPONENTE>
+    * cp -ad \#skeleton <MEINE_KOMPONENTE>
     * cd <MEINE_KOMPONENTE>
     * ./init.sh <MEINE_KOMPONENTE>
     * cd ../..
