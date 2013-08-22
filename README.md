@@ -21,7 +21,7 @@ Verwendete Bibliotheken unterliegen deren jeweiligen Lizenzen.
 ### Abhängigkeiten
 Bibliotheken
 
-    * SJCL mit ECC Komponente [@github](https://github.com/bitwiseshiftleft/sjcl)
+    * SJCL mit ECC Komponente https://github.com/bitwiseshiftleft/sjcl
 
 Node.js
 
@@ -35,7 +35,7 @@ Sonstiges
     * tree
     * GNU make
     * Java
-    * Closure Compiler [@Google Developers](https://developers.google.com/closure/compiler)
+    * Closure Compiler https://developers.google.com/closure/compiler
 
 ### Hinweise
 Da das Projekt in Typescript entwickelt ist wird der tsc-Compiler
@@ -75,8 +75,8 @@ und die Library wird gebaut. Das fertigte Javascript liegt dann im
 
     * Abhängige Tools sicherstellen
     * Makefile anpassen
-    * *make* ausführen
-    * Kompilat liegt im *build* Verzeichnis
+    * make ausführen
+    * Kompilat liegt im build Verzeichnis
 
 ### Eigene Komponenten
 Möchte man eigene Komponenten entwickeln, so kann man das Verzeichnis
