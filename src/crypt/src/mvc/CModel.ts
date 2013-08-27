@@ -13,10 +13,10 @@ module rkl.crypt.mvc
 	 */
 	export class CModel {
 		/** SJCL Referenzen */
-		public utf8str	= sjcl.codec.utf8String;
-		public base64	= sjcl.codec.base64;
-		public hex	= sjcl.codec.hex;
-		public bArray	= sjcl.bitArray;
+		public utf8str	= sjcl['codec']['utf8String'];
+		public base64	= sjcl['codec']['base64'];
+		public hex	= sjcl['codec']['hex'];
+		public bArray	= sjcl['bitArray'];
 
 		/** Instanzen */
 		public keys: ecc.CKeypair = null;

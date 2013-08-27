@@ -1,9 +1,15 @@
 .
-├── api.ts
 ├── build
 │   ├── rkl.js
-│   └── rkl.min.js
+│   ├── rkl.min.js
+│   ├── rkl.min_props_map.out
+│   └── rkl.min_vars_map.out
 ├── copyright
+├── lib
+│   ├── minify.sh
+│   ├── sjcl.js
+│   └── sjcl.min.js
+├── LICENSE
 ├── Makefile
 ├── README.md
 ├── src
@@ -38,7 +44,6 @@
 │   ├── fin
 │   │   ├── api.ts
 │   │   ├── build
-│   │   │   └── rklfin.js
 │   │   ├── copyright
 │   │   ├── Makefile
 │   │   └── src
@@ -78,4 +83,4 @@
 │               └── CView.ts
 └── tree.txt
 
-21 directories, 57 files
+22 directories, 61 files

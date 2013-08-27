@@ -36,9 +36,9 @@ module rkl.crypt.ecc
 		 */
 		public encrypt(_str: string) {
 			var key: Object = this.getPubkey();
-			return sjcl.encrypt(key, _str, {
-				iter:	ITERATIONS,
-				ks:	AESKEYLEN
+			return sjcl['encrypt'](key, _str, {
+				'iter':	ITERATIONS,
+				'ks':	AESKEYLEN
 			});
 		}
 
@@ -50,12 +50,11 @@ module rkl.crypt.ecc
 		 */
 		public decrypt(_str: string) {
 			var key: Object = this.getSeckey();
-			var dec: string = sjcl.decrypt(key,
-				$m.utf8str.fromBits($m.base64.toBits(_str)), {
-				iter:	ITERATIONS,
-				ks:	AESKEYLEN
+			return sjcl['decrypt'](key,
+				$m.utf8str['fromBits']($m.base64['toBits'](_str)), {
+				'iter':	ITERATIONS,
+				'ks':	AESKEYLEN
 			});
-			return dec;
 		}
 	}
 }

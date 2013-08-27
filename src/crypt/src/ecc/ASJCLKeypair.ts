@@ -27,9 +27,10 @@ module rkl.crypt.ecc
 		 * Ein Schlüsselpaar generieren
 		 *
 		 * @param _type Typ
+		 * @return void
 		 */
-		public generate(_type: string) {
-			this.mSJCLKeypair = sjcl.ecc[_type].generateKeys(ECC_KEYLEN, 10);
+		public generate(_type: string): void {
+			this.mSJCLKeypair = sjcl['ecc'][_type]['generateKeys'](ECC_KEYLEN, 10);
 			this.mSJCLPubkey = this.mSJCLKeypair['pub'];
 			this.mSJCLSeckey = this.mSJCLKeypair['sec'];
 		}

@@ -43,7 +43,7 @@ module rkl.crypt
 	export var $c: mvc.CController = null; // Controller
 
 	/** Externe Bibliotheken */
-	export declare var sjcl; // Stanford Javascript Crypto Library
+	export var sjcl	= window['sjcl']; // Stanford Javascript Crypto Library
 	/** ************************************************************ */
 	/** ************************************************************ */
 	/** ************************************************************ */
@@ -91,6 +91,16 @@ module rkl.crypt
 		}
 		catch(e) { $v.printError(e); }
 	}
+
+	/**
+	 * Schlüsselpaare GESPERRT exportieren
+	 *
+	 * @return string
+	 */
+	export function exportKeypairs(): string {
+		var keys :Object = $m.keys.exportKeys();
+		return encodeURIComponent(JSON.stringify(keys));
+	}
 	/** ************************************************************ */
 	/** ************************************************************ */
 	/** ************************************************************ */
@@ -107,7 +117,7 @@ module rkl.crypt
 	 */
 	export function utf8Encrypt(_str) {
 		var enc: string = $m.keys.getElgamal().encrypt(_str);
-		return $m.base64.fromBits($m.utf8str.toBits(enc));
+		return $m.base64['fromBits']($m.utf8str['toBits'](enc));
 	}
 
 	/**
@@ -181,4 +191,16 @@ module rkl.crypt
 	/** ************************************************************ */
 	/** ************************************************************ */
 }
+
+/** API */
+window['rkl'] = rkl;
+rkl['crypt']			= rkl.crypt;
+rkl.crypt['genECCKeys']		= rkl.crypt.genECCKeys;
+rkl.crypt['exportKeypairs']	= rkl.crypt.exportKeypairs;
+rkl.crypt['utf8Encrypt']	= rkl.crypt.utf8Encrypt;
+rkl.crypt['utf8Decrypt']	= rkl.crypt.utf8Decrypt;
+rkl.crypt['objEncrypt']		= rkl.crypt.objEncrypt;
+rkl.crypt['objDecrypt']		= rkl.crypt.objDecrypt;
+rkl.crypt['utf8Sign']		= rkl.crypt.utf8Sign;
+rkl.crypt['isMySignature']	= rkl.crypt.isMySignature;
 

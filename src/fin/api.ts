@@ -2,11 +2,28 @@
  * api.ts - (C) 2013 Romano Kleinwächter <romano.kleinwaechter@gmail.com>
  */
 
-/** Basisdateien für den Compiler referenzieren */
-///<reference path='./src/generic/utils.ts'/>
-///<reference path='./src/currency/Generic.ts'/>
-///<reference path='./src/account/Generic.ts'/>
-///<reference path='./src/exception/Generic.ts'/>
+/** Exceptions */
+///<reference path='src/exception/Generic.ts'/>
+///<reference path='src/exception/InvalidAmount.ts'/>
+///<reference path='src/exception/Unknown.ts'/>
+///<reference path='src/exception/DuplicateTransaction.ts'/>
+///<reference path='src/exception/InvalidValue.ts'/>
+///<reference path='src/exception/BalanceToLow.ts'/>
+///<reference path='src/exception/InvalidAccount.ts'/>
+///<reference path='src/exception/DuplicateAccount.ts'/>
+///<reference path='src/exception/IncompatibleCurrencies.ts'/>
+
+/** Allgemein */
+///<reference path='src/generic/utils.ts'/>
+
+/** Währung */
+///<reference path='src/currency/Generic.ts'/>
+
+/** Konto */
+///<reference path='src/account/types.ts'/>
+///<reference path='src/account/History.ts'/>
+///<reference path='src/account/Transaction.ts'/>
+///<reference path='src/account/Generic.ts'/>
 
 module rkl.fin {
 	/** Benötigte Module */

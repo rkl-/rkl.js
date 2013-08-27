@@ -37,8 +37,8 @@ module rkl.crypt.ecc
 
 			return new ecc.CSignedData(
 				_str,
-				$m.base64.fromBits(signature),
-				$m.base64.fromBits(shash)
+				$m.base64['fromBits'](signature),
+				$m.base64['fromBits'](shash)
 			);
 		}
 
@@ -51,16 +51,16 @@ module rkl.crypt.ecc
 		 * @return true bei Erfolg
 		 */
 		public verify(_sign: ISignedData) {
-			var shash = hash.sha256(_sign.payload);
+			var shash = hash.sha256(_sign['payload']);
 			var key = this.getPubkey();
 
 			// Bei falschem Hash Fehler werfen
-			if($m.base64.fromBits(shash) !== _sign.hash) {
+			if($m.base64['fromBits'](shash) !== _sign.hash) {
 				throw new eca.CInvalidHash('at verifing own signature');
 			}
 
 			// Signatur prüfen
-			try { key['verify'](shash, $m.base64.toBits(_sign.signature)); }
+			try { key['verify'](shash, $m.base64['toBits'](_sign['signature'])); }
 			catch(e) { throw new eca.CNotMySignature(e); }
 
 			// Signatur ist gültig

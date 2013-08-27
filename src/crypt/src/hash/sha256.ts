@@ -18,7 +18,7 @@ module rkl.crypt.hash
 	 * @return sjcl.bitArray
 	 */
 	export function sha256(_str: string) {
-		return sjcl.hash['sha256'].hash(_str);
+		return sjcl['hash']['sha256']['hash'](_str);
 	}
 }
 

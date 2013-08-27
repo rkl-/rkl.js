@@ -27,23 +27,24 @@ LIBNAME		= rkl
 
 ## Google Closurecompiler und Java
 CLOSURE_HOME	= /var/local/google/jsc.jar
-JAVA		= $(shell whereis java |cut -d " " -f 2)
+JAVA		= $(shell which java)
 
 ## Javascript compiler
 JSC_FLAGS	= --charset=UTF-8 \
 		--language_in=ECMASCRIPT5 \
-		--compilation_level=SIMPLE_OPTIMIZATIONS \
-		--use_types_for_optimization
+		--compilation_level=ADVANCED_OPTIMIZATIONS \
+		--use_types_for_optimization \
+		--create_name_map_files=true
 JSC		= ${JAVA} -jar ${CLOSURE_HOME} ${JSC_FLAGS}
 
 ## Typescriptcompiler
-TSC_HOME	= $(shell whereis tsc |cut -d " " -f 2)
+TSC_HOME	= $(shell which tsc)
 TSC_FLAGS	= --target ES5 \
 		--removeComments
 export TSC	= ${TSC_HOME} ${TSC_FLAGS}
 
 ## Verzeichnisse
-COMPONENTS	= crypt fin
+COMPONENTS	= utils crypt
 
 ## Phony targes
 .PHONY:		all clean
@@ -88,5 +89,5 @@ finally:
 clean:
 	if [ -f "tree.txt" ]; then unlink "tree.txt"; fi
 	for i in $(COMPONENTS); do make clean -C src/$$i; done
-	rm -f build/*.js build/*.sed
+	rm -f build/*
 
