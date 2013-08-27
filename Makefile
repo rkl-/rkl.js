@@ -44,7 +44,7 @@ TSC_FLAGS	= --target ES5 \
 export TSC	= ${TSC_HOME} ${TSC_FLAGS}
 
 ## Verzeichnisse
-COMPONENTS	= utils crypt
+COMPONENTS	= crypt
 
 ## Phony targes
 .PHONY:		all clean
