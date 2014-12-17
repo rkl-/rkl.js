@@ -3,14 +3,6 @@ rkl.js
 
 Javascript Bibliothek
 
-### Spenden
-Sie können diese Arbeit durch Spenden unterstützen und für zukünftige
-Weiterentwicklungen fördern.
-
-    * Bitcoin		1HtGPhKPrqJijS6ofUQ3r6zTuVrbVcbXKC
-    * Litecoin		LKP9wa9JmDDh37XzAq31KyZR3HYBEGF589
-    * Primecoin		AZbJUUbSkWuV8fvTNieQbAmPGBNEhAjSsm
-
 ### Copyright & Lizenz
 Copyright 2013 Romano Kleinwächter - Alle Rechte vorbehalten
 
